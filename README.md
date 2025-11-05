@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Edge Detection Images](docs\full_system.png "Optional Title")
+![Edge Detection Images](docs/full_system.png "Optional Title")
 
 This project implements a hybrid **edge-cloud system** for the real-time detection of illegal logging and other forest threats. It leverages a distributed network of **Raspberry Pi edge devices** equipped with microphones and environmental sensors to monitor forest environments. The system uses **machine learning models** to detect chainsaw activity and other anomalies, sending real-time alerts to a scalable cloud platform for further processing, model improvement, and centralized monitoring.
 
@@ -15,10 +15,10 @@ This project implements a hybrid **edge-cloud system** for the real-time detecti
   - Immediate transmission of alerts (with GPS) to the cloud upon detection.
   - Local monitoring for forest fires and device tampering using thermal and motion sensors.
 
-![Edge Detection Images](models\model_results_f1\metrics_by_mfcc.png "Metrics by MFCC")
-![Edge Detection Images](models\model_results_f1\performance_distributions.png "Performance Distributions")
-![Edge Detection Images](models\model_results_f1\performance_heatmaps.png "Heatmaps")
-![Edge Detection Images](models\model_results_f1\tradeoff_analysis.png "Tradeoff Analysis")
+![Edge Detection Images](models/model_results_f1/metrics_by_mfcc.png "Metrics by MFCC")
+![Edge Detection Images](models/model_results_f1/performance_distributions.png "Performance Distributions")
+![Edge Detection Images](models/model_results_f1/performance_heatmaps.png "Heatmaps")
+![Edge Detection Images](models/model_results_f1/tradeoff_analysis.png "Tradeoff Analysis")
 
 - **Cloud Platform:**  
   - Ingests real-time alerts and raw audio data from edge devices.
