@@ -1,0 +1,12 @@
+,Value
+Total Experiments,70.0
+Models Tested,14.0
+MFCC Configurations,5.0
+Best Overall F1,0.7795275590551181
+Best Overall Accuracy,0.8617283950617284
+Average F1,0.6522664040057146
+Average Accuracy,0.7645855379188713
+Total Training Time (hours),0.9961337664436238
+Average Training Time (sec),51.2297365599578
+Average Model Size (MB),0.9297608511788504
+Average Inference Time (ms),16.54267497393968

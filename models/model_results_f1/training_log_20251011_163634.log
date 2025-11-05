@@ -1,0 +1,556 @@
+2025-10-11 16:36:34,917 - INFO - ================================================================================
+2025-10-11 16:36:34,920 - INFO - STARTING COMPREHENSIVE MODEL TRAINING PIPELINE
+2025-10-11 16:36:34,924 - INFO - ================================================================================
+2025-10-11 16:36:34,953 - INFO - MFCC configurations to test: [8, 16, 32, 64, 128]
+2025-10-11 16:36:34,956 - INFO - Random seed: 42
+2025-10-11 16:36:34,959 - INFO - Binary mapping: {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 0, 23: 0, 24: 0, 25: 0, 26: 0, 27: 0}
+2025-10-11 16:36:34,994 - INFO - Total models configured: 14
+2025-10-11 16:36:34,996 - INFO -   - Logistic Regression
+2025-10-11 16:36:35,000 - INFO -   - Ridge Classifier
+2025-10-11 16:36:35,004 - INFO -   - SVM (RBF)
+2025-10-11 16:36:35,006 - INFO -   - Linear SVM
+2025-10-11 16:36:35,008 - INFO -   - Random Forest
+2025-10-11 16:36:35,011 - INFO -   - Extra Trees
+2025-10-11 16:36:35,012 - INFO -   - Gradient Boosting
+2025-10-11 16:36:35,015 - INFO -   - XGBoost
+2025-10-11 16:36:35,018 - INFO -   - LightGBM
+2025-10-11 16:36:35,019 - INFO -   - AdaBoost
+2025-10-11 16:36:35,020 - INFO -   - Decision Tree
+2025-10-11 16:36:35,023 - INFO -   - K-Nearest Neighbors
+2025-10-11 16:36:35,025 - INFO -   - Naive Bayes
+2025-10-11 16:36:35,027 - INFO -   - MLP Neural Network
+2025-10-11 16:36:35,090 - INFO - 
+================================================================================
+2025-10-11 16:36:35,094 - INFO - STARTING TRAINING LOOP
+2025-10-11 16:36:35,097 - INFO - ================================================================================
+2025-10-11 16:36:35,130 - INFO - 
+================================================================================
+2025-10-11 16:36:35,131 - INFO - PROCESSING n_mfcc = 8
+2025-10-11 16:36:35,133 - INFO - ================================================================================
+2025-10-11 16:36:35,140 - INFO - Data loaded - X_train: (1620, 8), X_test: (405, 8)
+2025-10-11 16:36:35,143 - INFO - Binary class distribution - Class 0: 1080, Class 1: 540
+2025-10-11 16:36:35,166 - INFO - 
+--- Training Logistic Regression (n_mfcc=8) ---
+2025-10-11 16:36:45,164 - INFO - Best params: {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-10-11 16:36:45,167 - INFO - Training time: 10.00s
+2025-10-11 16:36:45,209 - INFO - Accuracy: 0.6667, F1: 0.5687
+2025-10-11 16:36:45,212 - INFO - Model size: 0.0007 MB
+2025-10-11 16:36:45,213 - INFO - Inference time: 0.2195 ms (per 100 samples)
+2025-10-11 16:36:45,219 - INFO - 
+--- Training Ridge Classifier (n_mfcc=8) ---
+2025-10-11 16:36:45,307 - INFO - Best params: {'alpha': 10.0, 'solver': 'auto'}
+2025-10-11 16:36:45,309 - INFO - Training time: 0.09s
+2025-10-11 16:36:45,342 - INFO - Accuracy: 0.6543, F1: 0.5652
+2025-10-11 16:36:45,343 - INFO - Model size: 0.0007 MB
+2025-10-11 16:36:45,345 - INFO - Inference time: 0.1692 ms (per 100 samples)
+2025-10-11 16:36:45,360 - INFO - 
+--- Training SVM (RBF) (n_mfcc=8) ---
+2025-10-11 16:36:47,384 - INFO - Best params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-11 16:36:47,385 - INFO - Training time: 2.02s
+2025-10-11 16:36:49,018 - INFO - Accuracy: 0.8148, F1: 0.7423
+2025-10-11 16:36:49,020 - INFO - Model size: 0.0661 MB
+2025-10-11 16:36:49,024 - INFO - Inference time: 14.9460 ms (per 100 samples)
+2025-10-11 16:36:49,030 - INFO - 
+--- Training Linear SVM (n_mfcc=8) ---
+2025-10-11 16:36:49,139 - INFO - Best params: {'C': 1, 'loss': 'hinge'}
+2025-10-11 16:36:49,141 - INFO - Training time: 0.11s
+2025-10-11 16:36:49,179 - INFO - Accuracy: 0.6593, F1: 0.5660
+2025-10-11 16:36:49,181 - INFO - Model size: 0.0006 MB
+2025-10-11 16:36:49,184 - INFO - Inference time: 0.1823 ms (per 100 samples)
+2025-10-11 16:36:49,190 - INFO - 
+--- Training Random Forest (n_mfcc=8) ---
+2025-10-11 16:37:10,703 - INFO - Best params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}
+2025-10-11 16:37:10,705 - INFO - Training time: 21.51s
+2025-10-11 16:37:15,847 - INFO - Accuracy: 0.8148, F1: 0.7059
+2025-10-11 16:37:15,849 - INFO - Model size: 1.5335 MB
+2025-10-11 16:37:15,850 - INFO - Inference time: 49.9368 ms (per 100 samples)
+2025-10-11 16:37:15,866 - INFO - 
+--- Training Extra Trees (n_mfcc=8) ---
+2025-10-11 16:37:20,258 - INFO - Best params: {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 200}
+2025-10-11 16:37:20,261 - INFO - Training time: 4.39s
+2025-10-11 16:37:27,840 - INFO - Accuracy: 0.8099, F1: 0.6957
+2025-10-11 16:37:27,841 - INFO - Model size: 12.7085 MB
+2025-10-11 16:37:27,844 - INFO - Inference time: 73.1910 ms (per 100 samples)
+2025-10-11 16:37:27,906 - INFO - 
+--- Training Gradient Boosting (n_mfcc=8) ---
+2025-10-11 16:38:00,481 - INFO - Best params: {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.8}
+2025-10-11 16:38:00,483 - INFO - Training time: 32.57s
+2025-10-11 16:38:00,814 - INFO - Accuracy: 0.8000, F1: 0.6639
+2025-10-11 16:38:00,816 - INFO - Model size: 1.9398 MB
+2025-10-11 16:38:00,820 - INFO - Inference time: 2.7813 ms (per 100 samples)
+2025-10-11 16:38:00,841 - INFO - 
+--- Training XGBoost (n_mfcc=8) ---
+2025-10-11 16:38:21,496 - INFO - Best params: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 100, 'scale_pos_weight': 2, 'subsample': 0.8}
+2025-10-11 16:38:21,498 - INFO - Training time: 20.65s
+2025-10-11 16:38:21,672 - INFO - Accuracy: 0.8025, F1: 0.6947
+2025-10-11 16:38:21,674 - INFO - Model size: 0.2615 MB
+2025-10-11 16:38:21,676 - INFO - Inference time: 1.4478 ms (per 100 samples)
+2025-10-11 16:38:21,686 - INFO - 
+--- Training LightGBM (n_mfcc=8) ---
+2025-10-11 16:38:36,770 - INFO - Best params: {'learning_rate': 0.1, 'min_child_samples': 50, 'n_estimators': 200, 'num_leaves': 31}
+2025-10-11 16:38:36,773 - INFO - Training time: 15.08s
+2025-10-11 16:38:37,092 - INFO - Accuracy: 0.8074, F1: 0.6880
+2025-10-11 16:38:37,093 - INFO - Model size: 0.5434 MB
+2025-10-11 16:38:37,095 - INFO - Inference time: 2.7117 ms (per 100 samples)
+2025-10-11 16:38:37,121 - INFO - 
+--- Training AdaBoost (n_mfcc=8) ---
+2025-10-11 16:38:41,473 - INFO - Best params: {'learning_rate': 1.0, 'n_estimators': 200}
+2025-10-11 16:38:41,474 - INFO - Training time: 4.35s
+2025-10-11 16:38:46,164 - INFO - Accuracy: 0.7407, F1: 0.5455
+2025-10-11 16:38:46,166 - INFO - Model size: 0.1068 MB
+2025-10-11 16:38:46,168 - INFO - Inference time: 45.4184 ms (per 100 samples)
+2025-10-11 16:38:46,184 - INFO - 
+--- Training Decision Tree (n_mfcc=8) ---
+2025-10-11 16:38:46,604 - INFO - Best params: {'criterion': 'entropy', 'max_depth': 10, 'min_samples_split': 5}
+2025-10-11 16:38:46,606 - INFO - Training time: 0.42s
+2025-10-11 16:38:46,642 - INFO - Accuracy: 0.7259, F1: 0.6476
+2025-10-11 16:38:46,644 - INFO - Model size: 0.0146 MB
+2025-10-11 16:38:46,645 - INFO - Inference time: 0.1799 ms (per 100 samples)
+2025-10-11 16:38:46,650 - INFO - 
+--- Training K-Nearest Neighbors (n_mfcc=8) ---
+2025-10-11 16:38:47,205 - INFO - Best params: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-10-11 16:38:47,207 - INFO - Training time: 0.55s
+2025-10-11 16:38:50,033 - INFO - Accuracy: 0.8247, F1: 0.7300
+2025-10-11 16:38:50,036 - INFO - Model size: 0.1838 MB
+2025-10-11 16:38:50,038 - INFO - Inference time: 27.5588 ms (per 100 samples)
+2025-10-11 16:38:50,045 - INFO - 
+--- Training Naive Bayes (n_mfcc=8) ---
+2025-10-11 16:38:50,115 - INFO - Best params: {'var_smoothing': 1e-09}
+2025-10-11 16:38:50,116 - INFO - Training time: 0.07s
+2025-10-11 16:38:50,164 - INFO - Accuracy: 0.7259, F1: 0.4249
+2025-10-11 16:38:50,165 - INFO - Model size: 0.0008 MB
+2025-10-11 16:38:50,167 - INFO - Inference time: 0.2922 ms (per 100 samples)
+2025-10-11 16:38:50,173 - INFO - 
+--- Training MLP Neural Network (n_mfcc=8) ---
+2025-10-11 16:40:16,821 - INFO - Best params: {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (64, 32), 'learning_rate': 'constant'}
+2025-10-11 16:40:16,824 - INFO - Training time: 86.65s
+2025-10-11 16:40:16,913 - INFO - Accuracy: 0.8049, F1: 0.7106
+2025-10-11 16:40:16,915 - INFO - Model size: 0.0664 MB
+2025-10-11 16:40:16,917 - INFO - Inference time: 0.5566 ms (per 100 samples)
+2025-10-11 16:40:16,932 - INFO - 
+================================================================================
+2025-10-11 16:40:16,935 - INFO - PROCESSING n_mfcc = 16
+2025-10-11 16:40:16,940 - INFO - ================================================================================
+2025-10-11 16:40:16,947 - INFO - Data loaded - X_train: (1620, 16), X_test: (405, 16)
+2025-10-11 16:40:16,955 - INFO - Binary class distribution - Class 0: 1080, Class 1: 540
+2025-10-11 16:40:16,980 - INFO - 
+--- Training Logistic Regression (n_mfcc=16) ---
+2025-10-11 16:40:17,142 - INFO - Best params: {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-10-11 16:40:17,144 - INFO - Training time: 0.16s
+2025-10-11 16:40:17,203 - INFO - Accuracy: 0.6840, F1: 0.5949
+2025-10-11 16:40:17,206 - INFO - Model size: 0.0008 MB
+2025-10-11 16:40:17,208 - INFO - Inference time: 0.3080 ms (per 100 samples)
+2025-10-11 16:40:17,213 - INFO - 
+--- Training Ridge Classifier (n_mfcc=16) ---
+2025-10-11 16:40:17,312 - INFO - Best params: {'alpha': 0.1, 'solver': 'auto'}
+2025-10-11 16:40:17,314 - INFO - Training time: 0.10s
+2025-10-11 16:40:17,349 - INFO - Accuracy: 0.6568, F1: 0.5643
+2025-10-11 16:40:17,350 - INFO - Model size: 0.0008 MB
+2025-10-11 16:40:17,352 - INFO - Inference time: 0.1667 ms (per 100 samples)
+2025-10-11 16:40:17,365 - INFO - 
+--- Training SVM (RBF) (n_mfcc=16) ---
+2025-10-11 16:40:19,772 - INFO - Best params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-11 16:40:19,774 - INFO - Training time: 2.40s
+2025-10-11 16:40:21,654 - INFO - Accuracy: 0.7975, F1: 0.7267
+2025-10-11 16:40:21,656 - INFO - Model size: 0.1213 MB
+2025-10-11 16:40:21,659 - INFO - Inference time: 17.2949 ms (per 100 samples)
+2025-10-11 16:40:21,678 - INFO - 
+--- Training Linear SVM (n_mfcc=16) ---
+2025-10-11 16:40:21,934 - INFO - Best params: {'C': 10, 'loss': 'hinge'}
+2025-10-11 16:40:21,936 - INFO - Training time: 0.25s
+2025-10-11 16:40:21,972 - INFO - Accuracy: 0.6741, F1: 0.5769
+2025-10-11 16:40:21,974 - INFO - Model size: 0.0007 MB
+2025-10-11 16:40:21,975 - INFO - Inference time: 0.1765 ms (per 100 samples)
+2025-10-11 16:40:21,982 - INFO - 
+--- Training Random Forest (n_mfcc=16) ---
+2025-10-11 16:40:47,819 - INFO - Best params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-10-11 16:40:47,822 - INFO - Training time: 25.84s
+2025-10-11 16:40:52,911 - INFO - Accuracy: 0.8025, F1: 0.6800
+2025-10-11 16:40:52,912 - INFO - Model size: 1.3316 MB
+2025-10-11 16:40:52,915 - INFO - Inference time: 49.5392 ms (per 100 samples)
+2025-10-11 16:40:52,929 - INFO - 
+--- Training Extra Trees (n_mfcc=16) ---
+2025-10-11 16:40:57,377 - INFO - Best params: {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 200}
+2025-10-11 16:40:57,380 - INFO - Training time: 4.44s
+2025-10-11 16:41:05,563 - INFO - Accuracy: 0.8395, F1: 0.7303
+2025-10-11 16:41:05,565 - INFO - Model size: 10.7397 MB
+2025-10-11 16:41:05,568 - INFO - Inference time: 79.2647 ms (per 100 samples)
+2025-10-11 16:41:05,620 - INFO - 
+--- Training Gradient Boosting (n_mfcc=16) ---
+2025-10-11 16:41:52,603 - INFO - Best params: {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 100, 'subsample': 0.8}
+2025-10-11 16:41:52,605 - INFO - Training time: 46.98s
+2025-10-11 16:41:52,822 - INFO - Accuracy: 0.8000, F1: 0.6611
+2025-10-11 16:41:52,824 - INFO - Model size: 1.0595 MB
+2025-10-11 16:41:52,825 - INFO - Inference time: 1.7160 ms (per 100 samples)
+2025-10-11 16:41:52,839 - INFO - 
+--- Training XGBoost (n_mfcc=16) ---
+2025-10-11 16:42:28,460 - INFO - Best params: {'colsample_bytree': 1.0, 'learning_rate': 0.2, 'max_depth': 6, 'n_estimators': 200, 'scale_pos_weight': 2, 'subsample': 1.0}
+2025-10-11 16:42:28,462 - INFO - Training time: 35.62s
+2025-10-11 16:42:28,686 - INFO - Accuracy: 0.8049, F1: 0.6996
+2025-10-11 16:42:28,688 - INFO - Model size: 0.4046 MB
+2025-10-11 16:42:28,693 - INFO - Inference time: 1.8653 ms (per 100 samples)
+2025-10-11 16:42:28,705 - INFO - 
+--- Training LightGBM (n_mfcc=16) ---
+2025-10-11 16:42:37,407 - INFO - Best params: {'learning_rate': 0.1, 'min_child_samples': 50, 'n_estimators': 200, 'num_leaves': 31}
+2025-10-11 16:42:37,409 - INFO - Training time: 8.70s
+2025-10-11 16:42:37,737 - INFO - Accuracy: 0.8148, F1: 0.7104
+2025-10-11 16:42:37,739 - INFO - Model size: 0.5378 MB
+2025-10-11 16:42:37,741 - INFO - Inference time: 2.8660 ms (per 100 samples)
+2025-10-11 16:42:37,770 - INFO - 
+--- Training AdaBoost (n_mfcc=16) ---
+2025-10-11 16:42:43,567 - INFO - Best params: {'learning_rate': 1.0, 'n_estimators': 200}
+2025-10-11 16:42:43,567 - INFO - Training time: 5.80s
+2025-10-11 16:42:48,326 - INFO - Accuracy: 0.7383, F1: 0.5391
+2025-10-11 16:42:48,328 - INFO - Model size: 0.1068 MB
+2025-10-11 16:42:48,329 - INFO - Inference time: 46.1722 ms (per 100 samples)
+2025-10-11 16:42:48,352 - INFO - 
+--- Training Decision Tree (n_mfcc=16) ---
+2025-10-11 16:42:49,073 - INFO - Best params: {'criterion': 'entropy', 'max_depth': 10, 'min_samples_split': 5}
+2025-10-11 16:42:49,074 - INFO - Training time: 0.72s
+2025-10-11 16:42:49,117 - INFO - Accuracy: 0.6568, F1: 0.5851
+2025-10-11 16:42:49,120 - INFO - Model size: 0.0129 MB
+2025-10-11 16:42:49,121 - INFO - Inference time: 0.2032 ms (per 100 samples)
+2025-10-11 16:42:49,128 - INFO - 
+--- Training K-Nearest Neighbors (n_mfcc=16) ---
+2025-10-11 16:42:49,729 - INFO - Best params: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-10-11 16:42:49,730 - INFO - Training time: 0.60s
+2025-10-11 16:42:50,193 - INFO - Accuracy: 0.8000, F1: 0.7033
+2025-10-11 16:42:50,195 - INFO - Model size: 0.1119 MB
+2025-10-11 16:42:50,198 - INFO - Inference time: 2.7396 ms (per 100 samples)
+2025-10-11 16:42:50,207 - INFO - 
+--- Training Naive Bayes (n_mfcc=16) ---
+2025-10-11 16:42:50,270 - INFO - Best params: {'var_smoothing': 1e-09}
+2025-10-11 16:42:50,272 - INFO - Training time: 0.06s
+2025-10-11 16:42:50,328 - INFO - Accuracy: 0.7185, F1: 0.4124
+2025-10-11 16:42:50,329 - INFO - Model size: 0.0011 MB
+2025-10-11 16:42:50,331 - INFO - Inference time: 0.3279 ms (per 100 samples)
+2025-10-11 16:42:50,337 - INFO - 
+--- Training MLP Neural Network (n_mfcc=16) ---
+2025-10-11 16:44:03,291 - INFO - Best params: {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (64, 32), 'learning_rate': 'constant'}
+2025-10-11 16:44:03,293 - INFO - Training time: 72.95s
+2025-10-11 16:44:03,362 - INFO - Accuracy: 0.8420, F1: 0.7460
+2025-10-11 16:44:03,363 - INFO - Model size: 0.0654 MB
+2025-10-11 16:44:03,365 - INFO - Inference time: 0.3857 ms (per 100 samples)
+2025-10-11 16:44:03,379 - INFO - 
+================================================================================
+2025-10-11 16:44:03,382 - INFO - PROCESSING n_mfcc = 32
+2025-10-11 16:44:03,388 - INFO - ================================================================================
+2025-10-11 16:44:03,396 - INFO - Data loaded - X_train: (1620, 32), X_test: (405, 32)
+2025-10-11 16:44:03,400 - INFO - Binary class distribution - Class 0: 1080, Class 1: 540
+2025-10-11 16:44:03,421 - INFO - 
+--- Training Logistic Regression (n_mfcc=32) ---
+2025-10-11 16:44:03,577 - INFO - Best params: {'C': 1, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-10-11 16:44:03,580 - INFO - Training time: 0.15s
+2025-10-11 16:44:03,635 - INFO - Accuracy: 0.6840, F1: 0.5924
+2025-10-11 16:44:03,638 - INFO - Model size: 0.0009 MB
+2025-10-11 16:44:03,640 - INFO - Inference time: 0.2866 ms (per 100 samples)
+2025-10-11 16:44:03,645 - INFO - 
+--- Training Ridge Classifier (n_mfcc=32) ---
+2025-10-11 16:44:03,780 - INFO - Best params: {'alpha': 1.0, 'solver': 'auto'}
+2025-10-11 16:44:03,781 - INFO - Training time: 0.13s
+2025-10-11 16:44:03,825 - INFO - Accuracy: 0.6765, F1: 0.5868
+2025-10-11 16:44:03,827 - INFO - Model size: 0.0008 MB
+2025-10-11 16:44:03,830 - INFO - Inference time: 0.2348 ms (per 100 samples)
+2025-10-11 16:44:03,846 - INFO - 
+--- Training SVM (RBF) (n_mfcc=32) ---
+2025-10-11 16:44:06,688 - INFO - Best params: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
+2025-10-11 16:44:06,688 - INFO - Training time: 2.84s
+2025-10-11 16:44:08,660 - INFO - Accuracy: 0.8198, F1: 0.7491
+2025-10-11 16:44:08,661 - INFO - Model size: 0.2284 MB
+2025-10-11 16:44:08,662 - INFO - Inference time: 18.1363 ms (per 100 samples)
+2025-10-11 16:44:08,671 - INFO - 
+--- Training Linear SVM (n_mfcc=32) ---
+2025-10-11 16:44:08,932 - INFO - Best params: {'C': 1, 'loss': 'squared_hinge'}
+2025-10-11 16:44:08,934 - INFO - Training time: 0.26s
+2025-10-11 16:44:08,976 - INFO - Accuracy: 0.6790, F1: 0.5886
+2025-10-11 16:44:08,977 - INFO - Model size: 0.0008 MB
+2025-10-11 16:44:08,979 - INFO - Inference time: 0.2207 ms (per 100 samples)
+2025-10-11 16:44:08,985 - INFO - 
+--- Training Random Forest (n_mfcc=32) ---
+2025-10-11 16:44:38,548 - INFO - Best params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 300}
+2025-10-11 16:44:38,550 - INFO - Training time: 29.56s
+2025-10-11 16:44:50,613 - INFO - Accuracy: 0.8025, F1: 0.6774
+2025-10-11 16:44:50,616 - INFO - Model size: 4.3269 MB
+2025-10-11 16:44:50,619 - INFO - Inference time: 117.1568 ms (per 100 samples)
+2025-10-11 16:44:50,656 - INFO - 
+--- Training Extra Trees (n_mfcc=32) ---
+2025-10-11 16:44:55,196 - INFO - Best params: {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 100}
+2025-10-11 16:44:55,201 - INFO - Training time: 4.54s
+2025-10-11 16:45:00,764 - INFO - Accuracy: 0.8494, F1: 0.7490
+2025-10-11 16:45:00,766 - INFO - Model size: 5.1900 MB
+2025-10-11 16:45:00,773 - INFO - Inference time: 53.8411 ms (per 100 samples)
+2025-10-11 16:45:00,804 - INFO - 
+--- Training Gradient Boosting (n_mfcc=32) ---
+2025-10-11 16:46:22,405 - INFO - Best params: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100, 'subsample': 0.8}
+2025-10-11 16:46:22,405 - INFO - Training time: 81.60s
+2025-10-11 16:46:22,624 - INFO - Accuracy: 0.8296, F1: 0.7089
+2025-10-11 16:46:22,624 - INFO - Model size: 1.1941 MB
+2025-10-11 16:46:22,629 - INFO - Inference time: 1.7368 ms (per 100 samples)
+2025-10-11 16:46:22,639 - INFO - 
+--- Training XGBoost (n_mfcc=32) ---
+2025-10-11 16:47:29,482 - INFO - Best params: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 100, 'scale_pos_weight': 2, 'subsample': 0.8}
+2025-10-11 16:47:29,486 - INFO - Training time: 66.84s
+2025-10-11 16:47:29,661 - INFO - Accuracy: 0.8247, F1: 0.7361
+2025-10-11 16:47:29,663 - INFO - Model size: 0.2665 MB
+2025-10-11 16:47:29,666 - INFO - Inference time: 1.4456 ms (per 100 samples)
+2025-10-11 16:47:29,686 - INFO - 
+--- Training LightGBM (n_mfcc=32) ---
+2025-10-11 16:47:41,408 - INFO - Best params: {'learning_rate': 0.1, 'min_child_samples': 20, 'n_estimators': 200, 'num_leaves': 31}
+2025-10-11 16:47:41,410 - INFO - Training time: 11.72s
+2025-10-11 16:47:41,751 - INFO - Accuracy: 0.8370, F1: 0.7462
+2025-10-11 16:47:41,753 - INFO - Model size: 0.6677 MB
+2025-10-11 16:47:41,755 - INFO - Inference time: 2.9631 ms (per 100 samples)
+2025-10-11 16:47:41,816 - INFO - 
+--- Training AdaBoost (n_mfcc=32) ---
+2025-10-11 16:47:51,375 - INFO - Best params: {'learning_rate': 1.0, 'n_estimators': 200}
+2025-10-11 16:47:51,376 - INFO - Training time: 9.55s
+2025-10-11 16:47:56,560 - INFO - Accuracy: 0.7630, F1: 0.5932
+2025-10-11 16:47:56,561 - INFO - Model size: 0.1068 MB
+2025-10-11 16:47:56,563 - INFO - Inference time: 50.3885 ms (per 100 samples)
+2025-10-11 16:47:56,595 - INFO - 
+--- Training Decision Tree (n_mfcc=32) ---
+2025-10-11 16:47:57,727 - INFO - Best params: {'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 5}
+2025-10-11 16:47:57,729 - INFO - Training time: 1.13s
+2025-10-11 16:47:57,774 - INFO - Accuracy: 0.7432, F1: 0.6486
+2025-10-11 16:47:57,775 - INFO - Model size: 0.0155 MB
+2025-10-11 16:47:57,778 - INFO - Inference time: 0.2198 ms (per 100 samples)
+2025-10-11 16:47:57,785 - INFO - 
+--- Training K-Nearest Neighbors (n_mfcc=32) ---
+2025-10-11 16:47:58,069 - INFO - Best params: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-10-11 16:47:58,070 - INFO - Training time: 0.28s
+2025-10-11 16:47:58,408 - INFO - Accuracy: 0.8074, F1: 0.7273
+2025-10-11 16:47:58,410 - INFO - Model size: 0.2108 MB
+2025-10-11 16:47:58,412 - INFO - Inference time: 3.0571 ms (per 100 samples)
+2025-10-11 16:47:58,419 - INFO - 
+--- Training Naive Bayes (n_mfcc=32) ---
+2025-10-11 16:47:58,472 - INFO - Best params: {'var_smoothing': 1e-09}
+2025-10-11 16:47:58,473 - INFO - Training time: 0.05s
+2025-10-11 16:47:58,541 - INFO - Accuracy: 0.6395, F1: 0.5466
+2025-10-11 16:47:58,542 - INFO - Model size: 0.0016 MB
+2025-10-11 16:47:58,545 - INFO - Inference time: 0.4288 ms (per 100 samples)
+2025-10-11 16:47:58,552 - INFO - 
+--- Training MLP Neural Network (n_mfcc=32) ---
+2025-10-11 16:49:03,546 - INFO - Best params: {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (128,), 'learning_rate': 'constant'}
+2025-10-11 16:49:03,547 - INFO - Training time: 64.99s
+2025-10-11 16:49:03,630 - INFO - Accuracy: 0.8222, F1: 0.7372
+2025-10-11 16:49:03,631 - INFO - Model size: 0.0886 MB
+2025-10-11 16:49:03,634 - INFO - Inference time: 0.5850 ms (per 100 samples)
+2025-10-11 16:49:03,648 - INFO - 
+================================================================================
+2025-10-11 16:49:03,651 - INFO - PROCESSING n_mfcc = 64
+2025-10-11 16:49:03,655 - INFO - ================================================================================
+2025-10-11 16:49:03,664 - INFO - Data loaded - X_train: (1620, 64), X_test: (405, 64)
+2025-10-11 16:49:03,669 - INFO - Binary class distribution - Class 0: 1080, Class 1: 540
+2025-10-11 16:49:03,693 - INFO - 
+--- Training Logistic Regression (n_mfcc=64) ---
+2025-10-11 16:49:03,919 - INFO - Best params: {'C': 0.1, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-10-11 16:49:03,922 - INFO - Training time: 0.22s
+2025-10-11 16:49:03,966 - INFO - Accuracy: 0.6840, F1: 0.6049
+2025-10-11 16:49:03,968 - INFO - Model size: 0.0012 MB
+2025-10-11 16:49:03,970 - INFO - Inference time: 0.2415 ms (per 100 samples)
+2025-10-11 16:49:03,977 - INFO - 
+--- Training Ridge Classifier (n_mfcc=64) ---
+2025-10-11 16:49:04,280 - INFO - Best params: {'alpha': 10.0, 'solver': 'saga'}
+2025-10-11 16:49:04,280 - INFO - Training time: 0.30s
+2025-10-11 16:49:04,332 - INFO - Accuracy: 0.6642, F1: 0.5904
+2025-10-11 16:49:04,334 - INFO - Model size: 0.0010 MB
+2025-10-11 16:49:04,338 - INFO - Inference time: 0.3169 ms (per 100 samples)
+2025-10-11 16:49:04,343 - INFO - 
+--- Training SVM (RBF) (n_mfcc=64) ---
+2025-10-11 16:49:07,688 - INFO - Best params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-11 16:49:07,690 - INFO - Training time: 3.34s
+2025-10-11 16:49:10,134 - INFO - Accuracy: 0.7827, F1: 0.6857
+2025-10-11 16:49:10,136 - INFO - Model size: 0.4959 MB
+2025-10-11 16:49:10,138 - INFO - Inference time: 22.2337 ms (per 100 samples)
+2025-10-11 16:49:10,148 - INFO - 
+--- Training Linear SVM (n_mfcc=64) ---
+2025-10-11 16:49:10,734 - INFO - Best params: {'C': 1, 'loss': 'hinge'}
+2025-10-11 16:49:10,735 - INFO - Training time: 0.58s
+2025-10-11 16:49:10,784 - INFO - Accuracy: 0.6790, F1: 0.6061
+2025-10-11 16:49:10,786 - INFO - Model size: 0.0011 MB
+2025-10-11 16:49:10,787 - INFO - Inference time: 0.2745 ms (per 100 samples)
+2025-10-11 16:49:10,801 - INFO - 
+--- Training Random Forest (n_mfcc=64) ---
+2025-10-11 16:49:48,978 - INFO - Best params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 300}
+2025-10-11 16:49:48,980 - INFO - Training time: 38.17s
+2025-10-11 16:50:00,870 - INFO - Accuracy: 0.8123, F1: 0.6807
+2025-10-11 16:50:00,874 - INFO - Model size: 4.4591 MB
+2025-10-11 16:50:00,880 - INFO - Inference time: 115.2788 ms (per 100 samples)
+2025-10-11 16:50:00,919 - INFO - 
+--- Training Extra Trees (n_mfcc=64) ---
+2025-10-11 16:50:06,015 - INFO - Best params: {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 200}
+2025-10-11 16:50:06,015 - INFO - Training time: 5.09s
+2025-10-11 16:50:14,894 - INFO - Accuracy: 0.8049, F1: 0.6996
+2025-10-11 16:50:14,899 - INFO - Model size: 3.6697 MB
+2025-10-11 16:50:14,899 - INFO - Inference time: 86.0797 ms (per 100 samples)
+2025-10-11 16:50:14,926 - INFO - 
+--- Training Gradient Boosting (n_mfcc=64) ---
+2025-10-11 17:16:20,341 - INFO - Best params: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-10-11 17:16:20,344 - INFO - Training time: 1568.23s
+2025-10-11 17:16:20,454 - INFO - Accuracy: 0.8469, F1: 0.7328
+2025-10-11 17:16:20,455 - INFO - Model size: 0.8366 MB
+2025-10-11 17:16:20,456 - INFO - Inference time: 0.9119 ms (per 100 samples)
+2025-10-11 17:16:20,465 - INFO - 
+--- Training XGBoost (n_mfcc=64) ---
+2025-10-11 17:18:53,735 - INFO - Best params: {'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200, 'scale_pos_weight': 2, 'subsample': 1.0}
+2025-10-11 17:18:53,737 - INFO - Training time: 153.27s
+2025-10-11 17:18:54,537 - INFO - Accuracy: 0.8296, F1: 0.7206
+2025-10-11 17:18:54,541 - INFO - Model size: 0.6077 MB
+2025-10-11 17:18:54,546 - INFO - Inference time: 7.0294 ms (per 100 samples)
+2025-10-11 17:18:54,619 - INFO - 
+--- Training LightGBM (n_mfcc=64) ---
+2025-10-11 17:19:35,256 - INFO - Best params: {'learning_rate': 0.1, 'min_child_samples': 20, 'n_estimators': 200, 'num_leaves': 31}
+2025-10-11 17:19:35,261 - INFO - Training time: 40.63s
+2025-10-11 17:19:35,847 - INFO - Accuracy: 0.8617, F1: 0.7795
+2025-10-11 17:19:35,850 - INFO - Model size: 0.6718 MB
+2025-10-11 17:19:35,853 - INFO - Inference time: 5.0701 ms (per 100 samples)
+2025-10-11 17:19:35,896 - INFO - 
+--- Training AdaBoost (n_mfcc=64) ---
+2025-10-11 17:19:53,453 - INFO - Best params: {'learning_rate': 1.0, 'n_estimators': 200}
+2025-10-11 17:19:53,454 - INFO - Training time: 17.55s
+2025-10-11 17:19:56,301 - INFO - Accuracy: 0.7457, F1: 0.5654
+2025-10-11 17:19:56,302 - INFO - Model size: 0.1068 MB
+2025-10-11 17:19:56,304 - INFO - Inference time: 27.5802 ms (per 100 samples)
+2025-10-11 17:19:56,316 - INFO - 
+--- Training Decision Tree (n_mfcc=64) ---
+2025-10-11 17:19:58,548 - INFO - Best params: {'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 5}
+2025-10-11 17:19:58,549 - INFO - Training time: 2.23s
+2025-10-11 17:19:58,571 - INFO - Accuracy: 0.7235, F1: 0.6267
+2025-10-11 17:19:58,573 - INFO - Model size: 0.0150 MB
+2025-10-11 17:19:58,574 - INFO - Inference time: 0.0943 ms (per 100 samples)
+2025-10-11 17:19:58,580 - INFO - 
+--- Training K-Nearest Neighbors (n_mfcc=64) ---
+2025-10-11 17:19:59,199 - INFO - Best params: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-10-11 17:19:59,200 - INFO - Training time: 0.62s
+2025-10-11 17:19:59,550 - INFO - Accuracy: 0.7778, F1: 0.6853
+2025-10-11 17:19:59,552 - INFO - Model size: 0.4085 MB
+2025-10-11 17:19:59,554 - INFO - Inference time: 3.1955 ms (per 100 samples)
+2025-10-11 17:19:59,569 - INFO - 
+--- Training Naive Bayes (n_mfcc=64) ---
+2025-10-11 17:19:59,638 - INFO - Best params: {'var_smoothing': 1e-09}
+2025-10-11 17:19:59,641 - INFO - Training time: 0.07s
+2025-10-11 17:19:59,763 - INFO - Accuracy: 0.6938, F1: 0.5664
+2025-10-11 17:19:59,765 - INFO - Model size: 0.0025 MB
+2025-10-11 17:19:59,767 - INFO - Inference time: 0.8062 ms (per 100 samples)
+2025-10-11 17:19:59,777 - INFO - 
+--- Training MLP Neural Network (n_mfcc=64) ---
+2025-10-11 17:21:06,846 - INFO - Best params: {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (128,), 'learning_rate': 'constant'}
+2025-10-11 17:21:06,847 - INFO - Training time: 67.06s
+2025-10-11 17:21:06,914 - INFO - Accuracy: 0.8272, F1: 0.7328
+2025-10-11 17:21:06,915 - INFO - Model size: 0.1458 MB
+2025-10-11 17:21:06,916 - INFO - Inference time: 0.4870 ms (per 100 samples)
+2025-10-11 17:21:06,928 - INFO - 
+================================================================================
+2025-10-11 17:21:06,929 - INFO - PROCESSING n_mfcc = 128
+2025-10-11 17:21:06,931 - INFO - ================================================================================
+2025-10-11 17:21:06,951 - INFO - Data loaded - X_train: (1620, 128), X_test: (405, 128)
+2025-10-11 17:21:06,954 - INFO - Binary class distribution - Class 0: 1080, Class 1: 540
+2025-10-11 17:21:06,978 - INFO - 
+--- Training Logistic Regression (n_mfcc=128) ---
+2025-10-11 17:21:07,634 - INFO - Best params: {'C': 0.1, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-10-11 17:21:07,635 - INFO - Training time: 0.65s
+2025-10-11 17:21:07,668 - INFO - Accuracy: 0.7012, F1: 0.6134
+2025-10-11 17:21:07,670 - INFO - Model size: 0.0017 MB
+2025-10-11 17:21:07,671 - INFO - Inference time: 0.1822 ms (per 100 samples)
+2025-10-11 17:21:07,677 - INFO - 
+--- Training Ridge Classifier (n_mfcc=128) ---
+2025-10-11 17:21:08,593 - INFO - Best params: {'alpha': 10.0, 'solver': 'auto'}
+2025-10-11 17:21:08,595 - INFO - Training time: 0.91s
+2025-10-11 17:21:08,633 - INFO - Accuracy: 0.6938, F1: 0.6026
+2025-10-11 17:21:08,634 - INFO - Model size: 0.0012 MB
+2025-10-11 17:21:08,635 - INFO - Inference time: 0.1871 ms (per 100 samples)
+2025-10-11 17:21:08,640 - INFO - 
+--- Training SVM (RBF) (n_mfcc=128) ---
+2025-10-11 17:21:14,679 - INFO - Best params: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
+2025-10-11 17:21:14,680 - INFO - Training time: 6.03s
+2025-10-11 17:21:16,503 - INFO - Accuracy: 0.7951, F1: 0.6982
+2025-10-11 17:21:16,504 - INFO - Model size: 1.0178 MB
+2025-10-11 17:21:16,507 - INFO - Inference time: 16.7299 ms (per 100 samples)
+2025-10-11 17:21:16,513 - INFO - 
+--- Training Linear SVM (n_mfcc=128) ---
+2025-10-11 17:21:18,449 - INFO - Best params: {'C': 10, 'loss': 'hinge'}
+2025-10-11 17:21:18,450 - INFO - Training time: 1.94s
+2025-10-11 17:21:18,480 - INFO - Accuracy: 0.7136, F1: 0.6282
+2025-10-11 17:21:18,482 - INFO - Model size: 0.0015 MB
+2025-10-11 17:21:18,483 - INFO - Inference time: 0.1609 ms (per 100 samples)
+2025-10-11 17:21:18,487 - INFO - 
+--- Training Random Forest (n_mfcc=128) ---
+2025-10-11 17:22:31,127 - INFO - Best params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-10-11 17:22:31,131 - INFO - Training time: 72.64s
+2025-10-11 17:22:40,581 - INFO - Accuracy: 0.7901, F1: 0.6473
+2025-10-11 17:22:40,583 - INFO - Model size: 2.9193 MB
+2025-10-11 17:22:40,584 - INFO - Inference time: 89.9968 ms (per 100 samples)
+2025-10-11 17:22:40,597 - INFO - 
+--- Training Extra Trees (n_mfcc=128) ---
+2025-10-11 17:22:49,353 - INFO - Best params: {'max_depth': 10, 'min_samples_split': 5, 'n_estimators': 200}
+2025-10-11 17:22:49,356 - INFO - Training time: 8.75s
+2025-10-11 17:22:56,104 - INFO - Accuracy: 0.8123, F1: 0.7054
+2025-10-11 17:22:56,106 - INFO - Model size: 3.3702 MB
+2025-10-11 17:22:56,108 - INFO - Inference time: 64.8933 ms (per 100 samples)
+2025-10-11 17:22:56,129 - INFO - 
+--- Training Gradient Boosting (n_mfcc=128) ---
+2025-10-11 17:30:10,485 - INFO - Best params: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}
+2025-10-11 17:30:10,486 - INFO - Training time: 434.35s
+2025-10-11 17:30:10,582 - INFO - Accuracy: 0.8148, F1: 0.6914
+2025-10-11 17:30:10,583 - INFO - Model size: 0.1335 MB
+2025-10-11 17:30:10,587 - INFO - Inference time: 0.7976 ms (per 100 samples)
+2025-10-11 17:30:10,595 - INFO - 
+--- Training XGBoost (n_mfcc=128) ---
+2025-10-11 17:35:37,095 - INFO - Best params: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200, 'scale_pos_weight': 2, 'subsample': 0.8}
+2025-10-11 17:35:37,098 - INFO - Training time: 326.50s
+2025-10-11 17:35:37,337 - INFO - Accuracy: 0.8296, F1: 0.7454
+2025-10-11 17:35:37,339 - INFO - Model size: 0.2244 MB
+2025-10-11 17:35:37,341 - INFO - Inference time: 1.9718 ms (per 100 samples)
+2025-10-11 17:35:37,362 - INFO - 
+--- Training LightGBM (n_mfcc=128) ---
+2025-10-11 17:36:42,206 - INFO - Best params: {'learning_rate': 0.2, 'min_child_samples': 50, 'n_estimators': 200, 'num_leaves': 31}
+2025-10-11 17:36:42,210 - INFO - Training time: 64.84s
+2025-10-11 17:36:42,725 - INFO - Accuracy: 0.8543, F1: 0.7649
+2025-10-11 17:36:42,726 - INFO - Model size: 0.5718 MB
+2025-10-11 17:36:42,728 - INFO - Inference time: 4.5249 ms (per 100 samples)
+2025-10-11 17:36:42,760 - INFO - 
+--- Training AdaBoost (n_mfcc=128) ---
+2025-10-11 17:37:15,826 - INFO - Best params: {'learning_rate': 1.0, 'n_estimators': 200}
+2025-10-11 17:37:15,828 - INFO - Training time: 33.06s
+2025-10-11 17:37:18,908 - INFO - Accuracy: 0.7802, F1: 0.6454
+2025-10-11 17:37:18,910 - INFO - Model size: 0.1068 MB
+2025-10-11 17:37:18,912 - INFO - Inference time: 29.7955 ms (per 100 samples)
+2025-10-11 17:37:18,924 - INFO - 
+--- Training Decision Tree (n_mfcc=128) ---
+2025-10-11 17:37:23,437 - INFO - Best params: {'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 5}
+2025-10-11 17:37:23,438 - INFO - Training time: 4.51s
+2025-10-11 17:37:23,467 - INFO - Accuracy: 0.6988, F1: 0.6115
+2025-10-11 17:37:23,468 - INFO - Model size: 0.0161 MB
+2025-10-11 17:37:23,469 - INFO - Inference time: 0.1711 ms (per 100 samples)
+2025-10-11 17:37:23,475 - INFO - 
+--- Training K-Nearest Neighbors (n_mfcc=128) ---
+2025-10-11 17:37:24,219 - INFO - Best params: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-10-11 17:37:24,220 - INFO - Training time: 0.74s
+2025-10-11 17:37:24,721 - INFO - Accuracy: 0.7358, F1: 0.6348
+2025-10-11 17:37:24,724 - INFO - Model size: 0.8040 MB
+2025-10-11 17:37:24,726 - INFO - Inference time: 4.4169 ms (per 100 samples)
+2025-10-11 17:37:24,735 - INFO - 
+--- Training Naive Bayes (n_mfcc=128) ---
+2025-10-11 17:37:24,903 - INFO - Best params: {'var_smoothing': 1e-09}
+2025-10-11 17:37:24,908 - INFO - Training time: 0.17s
+2025-10-11 17:37:25,025 - INFO - Accuracy: 0.7160, F1: 0.4335
+2025-10-11 17:37:25,027 - INFO - Model size: 0.0045 MB
+2025-10-11 17:37:25,029 - INFO - Inference time: 0.6946 ms (per 100 samples)
+2025-10-11 17:37:25,037 - INFO - 
+--- Training MLP Neural Network (n_mfcc=128) ---
+2025-10-11 17:38:21,950 - INFO - Best params: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (128,), 'learning_rate': 'constant'}
+2025-10-11 17:38:21,951 - INFO - Training time: 56.91s
+2025-10-11 17:38:22,020 - INFO - Accuracy: 0.7926, F1: 0.6934
+2025-10-11 17:38:22,023 - INFO - Model size: 0.2659 MB
+2025-10-11 17:38:22,024 - INFO - Inference time: 0.5466 ms (per 100 samples)
+2025-10-11 17:38:22,033 - INFO - 
+================================================================================
+2025-10-11 17:38:22,035 - INFO - TRAINING COMPLETED
+2025-10-11 17:38:22,038 - INFO - ================================================================================
+2025-10-11 17:38:22,065 - INFO - Results saved to: C:\Users\Lenovo\Documents\projects\research\Major-Project\Forest-Audio\data\processed_audio\model_results\all_results.csv
+2025-10-11 17:38:50,890 - INFO - 
+================================================================================
+2025-10-11 17:38:50,891 - INFO - PIPELINE COMPLETED SUCCESSFULLY
+2025-10-11 17:38:50,893 - INFO - Total experiments: 70
+2025-10-11 17:38:50,895 - INFO - Results saved to: C:\Users\Lenovo\Documents\projects\research\Major-Project\Forest-Audio\data\processed_audio\model_results
+2025-10-11 17:38:50,897 - INFO - ================================================================================

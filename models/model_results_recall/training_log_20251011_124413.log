@@ -1,0 +1,211 @@
+2025-10-11 12:44:13,809 - INFO - ================================================================================
+2025-10-11 12:44:13,809 - INFO - STARTING COMPREHENSIVE MODEL TRAINING PIPELINE
+2025-10-11 12:44:13,812 - INFO - ================================================================================
+2025-10-11 12:44:17,290 - INFO - MFCC configurations to test: [8, 16, 32, 64, 128]
+2025-10-11 12:44:17,292 - INFO - Random seed: 42
+2025-10-11 12:44:17,292 - INFO - Binary mapping: {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 0, 23: 0, 24: 0, 25: 0, 26: 0, 27: 0}
+2025-10-11 12:44:17,300 - INFO - Total models configured: 14
+2025-10-11 12:44:17,303 - INFO -   - Logistic Regression
+2025-10-11 12:44:17,304 - INFO -   - Ridge Classifier
+2025-10-11 12:44:17,305 - INFO -   - SVM (RBF)
+2025-10-11 12:44:17,305 - INFO -   - Linear SVM
+2025-10-11 12:44:17,306 - INFO -   - Random Forest
+2025-10-11 12:44:17,307 - INFO -   - Extra Trees
+2025-10-11 12:44:17,308 - INFO -   - Gradient Boosting
+2025-10-11 12:44:17,308 - INFO -   - XGBoost
+2025-10-11 12:44:17,310 - INFO -   - LightGBM
+2025-10-11 12:44:17,311 - INFO -   - AdaBoost
+2025-10-11 12:44:17,311 - INFO -   - Decision Tree
+2025-10-11 12:44:17,312 - INFO -   - K-Nearest Neighbors
+2025-10-11 12:44:17,313 - INFO -   - Naive Bayes
+2025-10-11 12:44:17,314 - INFO -   - MLP Neural Network
+2025-10-11 12:44:53,825 - INFO - 
+================================================================================
+2025-10-11 12:44:53,825 - INFO - STARTING TRAINING LOOP
+2025-10-11 12:44:53,828 - INFO - ================================================================================
+2025-10-11 12:44:53,847 - INFO - 
+================================================================================
+2025-10-11 12:44:53,849 - INFO - PROCESSING n_mfcc = 8
+2025-10-11 12:44:53,851 - INFO - ================================================================================
+2025-10-11 12:44:53,853 - ERROR - File not found for n_mfcc=8: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_8.npy'
+2025-10-11 12:44:53,855 - INFO - 
+================================================================================
+2025-10-11 12:44:53,856 - INFO - PROCESSING n_mfcc = 16
+2025-10-11 12:44:53,857 - INFO - ================================================================================
+2025-10-11 12:44:53,859 - ERROR - File not found for n_mfcc=16: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_16.npy'
+2025-10-11 12:44:53,861 - INFO - 
+================================================================================
+2025-10-11 12:44:53,863 - INFO - PROCESSING n_mfcc = 32
+2025-10-11 12:44:53,865 - INFO - ================================================================================
+2025-10-11 12:44:53,865 - ERROR - File not found for n_mfcc=32: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_32.npy'
+2025-10-11 12:44:53,867 - INFO - 
+================================================================================
+2025-10-11 12:44:53,867 - INFO - PROCESSING n_mfcc = 64
+2025-10-11 12:44:53,869 - INFO - ================================================================================
+2025-10-11 12:44:53,871 - ERROR - File not found for n_mfcc=64: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_64.npy'
+2025-10-11 12:44:53,874 - INFO - 
+================================================================================
+2025-10-11 12:44:53,877 - INFO - PROCESSING n_mfcc = 128
+2025-10-11 12:44:53,878 - INFO - ================================================================================
+2025-10-11 12:44:53,879 - ERROR - File not found for n_mfcc=128: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_128.npy'
+2025-10-11 12:44:53,882 - INFO - 
+================================================================================
+2025-10-11 12:44:53,884 - INFO - TRAINING COMPLETED
+2025-10-11 12:44:53,886 - INFO - ================================================================================
+2025-10-11 12:44:53,896 - INFO - Results saved to: C:\Users\Lenovo\Documents\projects\research\Major-Project\Forest-Audio\models\model_results\all_results.csv
+2025-10-11 12:45:59,007 - INFO - MFCC configurations to test: [8, 16, 32, 64, 128]
+2025-10-11 12:45:59,008 - INFO - Random seed: 42
+2025-10-11 12:45:59,010 - INFO - Binary mapping: {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 0, 23: 0, 24: 0, 25: 0, 26: 0, 27: 0}
+2025-10-11 12:45:59,013 - INFO - Total models configured: 14
+2025-10-11 12:45:59,015 - INFO -   - Logistic Regression
+2025-10-11 12:45:59,016 - INFO -   - Ridge Classifier
+2025-10-11 12:45:59,017 - INFO -   - SVM (RBF)
+2025-10-11 12:45:59,018 - INFO -   - Linear SVM
+2025-10-11 12:45:59,019 - INFO -   - Random Forest
+2025-10-11 12:45:59,020 - INFO -   - Extra Trees
+2025-10-11 12:45:59,020 - INFO -   - Gradient Boosting
+2025-10-11 12:45:59,021 - INFO -   - XGBoost
+2025-10-11 12:45:59,022 - INFO -   - LightGBM
+2025-10-11 12:45:59,023 - INFO -   - AdaBoost
+2025-10-11 12:45:59,025 - INFO -   - Decision Tree
+2025-10-11 12:45:59,027 - INFO -   - K-Nearest Neighbors
+2025-10-11 12:45:59,028 - INFO -   - Naive Bayes
+2025-10-11 12:45:59,029 - INFO -   - MLP Neural Network
+2025-10-11 12:45:59,585 - INFO - 
+================================================================================
+2025-10-11 12:45:59,587 - INFO - STARTING TRAINING LOOP
+2025-10-11 12:45:59,588 - INFO - ================================================================================
+2025-10-11 12:45:59,599 - INFO - 
+================================================================================
+2025-10-11 12:45:59,600 - INFO - PROCESSING n_mfcc = 8
+2025-10-11 12:45:59,603 - INFO - ================================================================================
+2025-10-11 12:45:59,606 - ERROR - File not found for n_mfcc=8: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_8.npy'
+2025-10-11 12:45:59,608 - INFO - 
+================================================================================
+2025-10-11 12:45:59,609 - INFO - PROCESSING n_mfcc = 16
+2025-10-11 12:45:59,609 - INFO - ================================================================================
+2025-10-11 12:45:59,611 - ERROR - File not found for n_mfcc=16: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_16.npy'
+2025-10-11 12:45:59,611 - INFO - 
+================================================================================
+2025-10-11 12:45:59,612 - INFO - PROCESSING n_mfcc = 32
+2025-10-11 12:45:59,613 - INFO - ================================================================================
+2025-10-11 12:45:59,614 - ERROR - File not found for n_mfcc=32: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_32.npy'
+2025-10-11 12:45:59,616 - INFO - 
+================================================================================
+2025-10-11 12:45:59,617 - INFO - PROCESSING n_mfcc = 64
+2025-10-11 12:45:59,618 - INFO - ================================================================================
+2025-10-11 12:45:59,620 - ERROR - File not found for n_mfcc=64: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_64.npy'
+2025-10-11 12:45:59,621 - INFO - 
+================================================================================
+2025-10-11 12:45:59,623 - INFO - PROCESSING n_mfcc = 128
+2025-10-11 12:45:59,625 - INFO - ================================================================================
+2025-10-11 12:45:59,627 - ERROR - File not found for n_mfcc=128: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_128.npy'
+2025-10-11 12:45:59,628 - INFO - 
+================================================================================
+2025-10-11 12:45:59,629 - INFO - TRAINING COMPLETED
+2025-10-11 12:45:59,631 - INFO - ================================================================================
+2025-10-11 12:45:59,635 - INFO - Results saved to: C:\Users\Lenovo\Documents\projects\research\Major-Project\Forest-Audio\models\model_results\all_results.csv
+2025-10-11 12:46:39,626 - INFO - 
+================================================================================
+2025-10-11 12:46:39,627 - INFO - STARTING TRAINING LOOP
+2025-10-11 12:46:39,629 - INFO - ================================================================================
+2025-10-11 12:46:39,641 - INFO - 
+================================================================================
+2025-10-11 12:46:39,642 - INFO - PROCESSING n_mfcc = 8
+2025-10-11 12:46:39,644 - INFO - ================================================================================
+2025-10-11 12:46:39,646 - ERROR - File not found for n_mfcc=8: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_8.npy'
+2025-10-11 12:46:39,648 - INFO - 
+================================================================================
+2025-10-11 12:46:39,650 - INFO - PROCESSING n_mfcc = 16
+2025-10-11 12:46:39,652 - INFO - ================================================================================
+2025-10-11 12:46:39,654 - ERROR - File not found for n_mfcc=16: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_16.npy'
+2025-10-11 12:46:39,655 - INFO - 
+================================================================================
+2025-10-11 12:46:39,657 - INFO - PROCESSING n_mfcc = 32
+2025-10-11 12:46:39,658 - INFO - ================================================================================
+2025-10-11 12:46:39,660 - ERROR - File not found for n_mfcc=32: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_32.npy'
+2025-10-11 12:46:39,661 - INFO - 
+================================================================================
+2025-10-11 12:46:39,662 - INFO - PROCESSING n_mfcc = 64
+2025-10-11 12:46:39,664 - INFO - ================================================================================
+2025-10-11 12:46:39,665 - ERROR - File not found for n_mfcc=64: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_64.npy'
+2025-10-11 12:46:39,666 - INFO - 
+================================================================================
+2025-10-11 12:46:39,667 - INFO - PROCESSING n_mfcc = 128
+2025-10-11 12:46:39,669 - INFO - ================================================================================
+2025-10-11 12:46:39,671 - ERROR - File not found for n_mfcc=128: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\projects\\research\\Major-Project\\Forest-Audio\\models\\X_train_128.npy'
+2025-10-11 12:46:39,674 - INFO - 
+================================================================================
+2025-10-11 12:46:39,675 - INFO - TRAINING COMPLETED
+2025-10-11 12:46:39,677 - INFO - ================================================================================
+2025-10-11 12:46:39,681 - INFO - Results saved to: C:\Users\Lenovo\Documents\projects\research\Major-Project\Forest-Audio\models\model_results\all_results.csv
+2025-10-11 12:47:01,275 - INFO - ================================================================================
+2025-10-11 12:47:01,278 - INFO - STARTING COMPREHENSIVE MODEL TRAINING PIPELINE
+2025-10-11 12:47:01,280 - INFO - ================================================================================
+2025-10-11 12:47:01,861 - INFO - MFCC configurations to test: [8, 16, 32, 64, 128]
+2025-10-11 12:47:01,862 - INFO - Random seed: 42
+2025-10-11 12:47:01,865 - INFO - Binary mapping: {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 0, 23: 0, 24: 0, 25: 0, 26: 0, 27: 0}
+2025-10-11 12:47:01,868 - INFO - Total models configured: 14
+2025-10-11 12:47:01,871 - INFO -   - Logistic Regression
+2025-10-11 12:47:01,872 - INFO -   - Ridge Classifier
+2025-10-11 12:47:01,874 - INFO -   - SVM (RBF)
+2025-10-11 12:47:01,876 - INFO -   - Linear SVM
+2025-10-11 12:47:01,877 - INFO -   - Random Forest
+2025-10-11 12:47:01,878 - INFO -   - Extra Trees
+2025-10-11 12:47:01,879 - INFO -   - Gradient Boosting
+2025-10-11 12:47:01,879 - INFO -   - XGBoost
+2025-10-11 12:47:01,879 - INFO -   - LightGBM
+2025-10-11 12:47:01,883 - INFO -   - AdaBoost
+2025-10-11 12:47:01,883 - INFO -   - Decision Tree
+2025-10-11 12:47:01,887 - INFO -   - K-Nearest Neighbors
+2025-10-11 12:47:01,887 - INFO -   - Naive Bayes
+2025-10-11 12:47:01,887 - INFO -   - MLP Neural Network
+2025-10-11 12:47:02,351 - INFO - 
+================================================================================
+2025-10-11 12:47:02,352 - INFO - STARTING TRAINING LOOP
+2025-10-11 12:47:02,354 - INFO - ================================================================================
+2025-10-11 12:47:02,368 - INFO - 
+================================================================================
+2025-10-11 12:47:02,369 - INFO - PROCESSING n_mfcc = 8
+2025-10-11 12:47:02,369 - INFO - ================================================================================
+2025-10-11 12:47:02,420 - INFO - Data loaded - X_train: (1620, 8), X_test: (405, 8)
+2025-10-11 12:47:02,422 - INFO - Binary class distribution - Class 0: 1080, Class 1: 540
+2025-10-11 12:47:02,435 - INFO - 
+--- Training Logistic Regression (n_mfcc=8) ---
+2025-10-11 12:47:13,100 - INFO - Best params: {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-10-11 12:47:13,101 - INFO - Training time: 10.66s
+2025-10-11 12:47:13,128 - INFO - Accuracy: 0.6667, F1: 0.5687
+2025-10-11 12:47:13,129 - INFO - Model size: 0.0007 MB
+2025-10-11 12:47:13,130 - INFO - Inference time: 0.1121 ms (per 100 samples)
+2025-10-11 12:47:13,133 - INFO - 
+--- Training Ridge Classifier (n_mfcc=8) ---
+2025-10-11 12:47:13,209 - INFO - Best params: {'alpha': 10.0, 'solver': 'auto'}
+2025-10-11 12:47:13,209 - INFO - Training time: 0.08s
+2025-10-11 12:47:13,234 - INFO - Accuracy: 0.6543, F1: 0.5652
+2025-10-11 12:47:13,236 - INFO - Model size: 0.0007 MB
+2025-10-11 12:47:13,238 - INFO - Inference time: 0.1098 ms (per 100 samples)
+2025-10-11 12:47:13,242 - INFO - 
+--- Training SVM (RBF) (n_mfcc=8) ---
+2025-10-11 12:47:15,357 - INFO - Best params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-11 12:47:15,358 - INFO - Training time: 2.11s
+2025-10-11 12:47:16,240 - INFO - Accuracy: 0.8148, F1: 0.7423
+2025-10-11 12:47:16,240 - INFO - Model size: 0.0661 MB
+2025-10-11 12:47:16,255 - INFO - Inference time: 8.1262 ms (per 100 samples)
+2025-10-11 12:47:16,260 - INFO - 
+--- Training Linear SVM (n_mfcc=8) ---
+2025-10-11 12:47:16,367 - INFO - Best params: {'C': 1, 'loss': 'hinge'}
+2025-10-11 12:47:16,369 - INFO - Training time: 0.11s
+2025-10-11 12:47:16,396 - INFO - Accuracy: 0.6593, F1: 0.5660
+2025-10-11 12:47:16,396 - INFO - Model size: 0.0006 MB
+2025-10-11 12:47:16,403 - INFO - Inference time: 0.1527 ms (per 100 samples)
+2025-10-11 12:47:16,409 - INFO - 
+--- Training Random Forest (n_mfcc=8) ---
+2025-10-11 12:47:42,729 - INFO - Best params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}
+2025-10-11 12:47:42,732 - INFO - Training time: 26.32s
+2025-10-11 12:47:47,002 - INFO - Accuracy: 0.8148, F1: 0.7059
+2025-10-11 12:47:47,004 - INFO - Model size: 1.5335 MB
+2025-10-11 12:47:47,006 - INFO - Inference time: 41.2742 ms (per 100 samples)
+2025-10-11 12:47:47,016 - INFO - 
+--- Training Extra Trees (n_mfcc=8) ---
+2025-10-11 12:47:53,207 - INFO - Best params: {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 200}
+2025-10-11 12:47:53,207 - INFO - Training time: 6.19s
