@@ -50,7 +50,6 @@ data/
     meta/
     processed_audio/
 docs/
-literature/
 models/
 ```
 
@@ -79,6 +78,9 @@ models/
   - DVC integration for data and pipeline versioning.
   - Automated pipeline stages: preprocess, train, full.
   - Model inference utilities for batch and single-file prediction.
+
+![MLflow Experiment Tracking](docs/exp.png "MLflow Experiment Tracking")
+![MLflow Experiment Detail](docs/details.png "MLflow Experiment Detail")
 
 ---
 
@@ -118,7 +120,7 @@ python code/pipeline.py --create-config
 ### 4. View MLflow UI
 
 ```sh
-mlflow ui
+mlflow ui --backend-store-uri file:///C:\Users\Lenovo\Documents\projects\research\Major-Project\Forest-Audio\models\mlruns
 # Open http://localhost:5000 in your browser
 ```
 

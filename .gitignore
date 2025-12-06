@@ -76,3 +76,5 @@ cover/
 .python-version
 Pipfile.lock
 poetry.lock
+
+/models/mlruns/
